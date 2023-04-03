@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0px;  
+}
+p, h1, h2, h4{
+  font-family: 'Montserrat';
+}
+#logo{
+  width: 240px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: #AE1901;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  
+}
+.responsive{
+  position: sticky;
+  top: 0;
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #icons{
+    padding-top: 20px;
+    
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    
+  }
+  .topnav.responsive .dropdown {float: none;}
+}
+
+
+/*test*/
+#welcome h1{
+  color: #f9f9f9;
+  text-align: center;
+  margin: 0px;
+  padding-top: 7%;
+}
+#welcome #exp{
+  text-align: center;
+  color: #f9f9f9;
+  margin-left: 20%;
+  padding-right: 20%;
+  margin-top: 5%;
+  position: initial;
+}
+ #welcome h4{
+
+  text-align: justify;
+  
+  margin: 0px;
+  margin-left: 20%;
+  padding-right: 20%;
+  color: #f9f9f9;
+  padding-bottom: 30%;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+/*test*/
+
+  #welcome{
+    background-image: url("welcome.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+
+
+@media screen and (min-width: 601px){
+#ourvalue{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#icons{
+  float: right;
+  padding-top: 30px;
+  padding-bottom: 32px;
+}
+}
+@media screen and (max-width:600px){
+  #ourvalue{
+    float: none;
+    width: 80%;
+  margin: auto;
+  }
+  #col1, #col2, #col3{
+   padding-bottom: 10%;
+  }
+  #ourval h1{
+    padding: 5%;
+  }
+  #icons{
+    float: none;
+  }
+  .card{
+    margin: 20px;
+  }
+}
+#ourvalue p{
+  text-align: center;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+#icons{
+  transition: all 0.5s ease-out;
+ text-align: center;
+ font-family: 'Montserrat';
+}
+.topnav{
+  position: sticky;
+  top: 0;
+}
+#ourvalue img {
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+}
+#ourval h1{
+  padding-top: 2%;
+  text-align: center;
+  color: #AE1901;
+  margin: 0px;
+ 
+}
+#why h1{
+  color: #000000;
+  text-align: center;
+  margin: 0px;
+  padding: 5%;
+}
+ #why h4{
+  text-align: justify;
+  
+  margin: 0px;
+  margin-left: 20%;
+  padding-right: 20%;
+  color: #050505;
+  padding-bottom: 30%;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+#why{
+  background-image: url("/white-poster.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#welcome p{
+font-size: 1.5em;
+color: #000000;
+margin: 0px;
+position: absolute;
+}
+#contact img{
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 601px){
+#phone, #insta, #fb, #mail, #linkedin{
+  padding: 5%;
+  width: 10%;
+  float: left;
+}
+
+#llc{
+  padding-top: 10px;
+}
+}
+@media screen and (max-width: 600px){
+  #phone, #insta, #fb, #mail, #linkedin{
+    margin-left: 30%;
+    margin-top: 10px;
+  }
+}
+#phone, #insta, #fb, #mail, #linkedin{
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+#linkedin:hover, #insta:hover, #fb:hover{
+  color: #AE1901;
+  
+  
+}
+#llc{
+  background-color: #AE1901;
+ 
+  margin-bottom: 0;
+ 
+}
+#llc p{
+  margin: 0px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+ 
+}
+#col1, #col2, #col3{
+  height: 300px;
+  transition: 2s;
+  border-radius: 7px;
+  background-color: #f7f7f8;
+  margin: 18px;
+  margin-bottom: 50px;
+  box-shadow:2px 2px 2px 2px rgba(85, 85, 85, 0.212);
+}
+
+#ourval{
+  background-color: #f1f1f1;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+   
+  }
+}
+@media screen and (min-width: 601px){
+  .card{
+    float: left;
+    width: 30%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  }
+  #ourval h1{
+    font-size: 2.3vw;
+  }
+  .column{
+    margin: 20px;
+  }
+  #contact{
+    padding-left: 6%;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr 1fr 1fr;
+  }
+
+}
+
+.card {
+ box-shadow: -3px 3px 5px rgba(134, 129, 129, 0.562), 3px 0 3px rgb(134, 129, 129,  0.562), -3px 0 3px rgb(134, 129, 129,  0.562), -3px 0 3px rgb(134, 129, 129,  0.562) ;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+
+}
+#firstline img{
+  width: 25px;
+  height: 25px;
+  margin-top: 20px ;
+}
+#firstline{
+  display: flex;
+}
+  #firstline h2{
+    font-size: 1.5rem;
+    margin-right: 3%;
+    font-weight: 700;
+    color: #f1f1f1;
+  }
+#con {
+  color: #f1f1f1;
+}
+.active{
+  cursor: pointer;
+}
+.card h2{
+  font-size: 1.5rem;
+}
+#contact{
+  background-color: #f1f1f1;
+}
+#overlay {
+  display: none;
+ 
+}
+#col1:hover #overlay, #col2:hover #overlay, #col3:hover #overlay{
+  padding-top: 5%;
+  display: block;
+  color: #000000;
+}
+#col1:hover img, #col2:hover img, #col3:hover img, #col1:hover h1, #col2:hover h1, #col3:hover h1{
+  position: absolute;
+  opacity: 0%;
+}
+
+#col1 img, #col2 img, #col3 img{
+  padding-top: 20%;
+}
+#overlay p{
+  margin: 5px;
+  padding: 0;
+  font-size: 1rem;
+  text-align: center;
+  white-space: nowrap; 
+  overflow: hidden; 
+  animation: typewriter 5s ;
+
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 28rem;
+  }
+}
+@keyframes after{
+  from{
+    width: 30rem;
+  }
+  to{
+    width: 0;
+  }
+}
